@@ -5,7 +5,21 @@ namespace CadastroAluno
         public string nome;
         public int idade;
         public string rg;
+        public string curso;
         public bool bolsista;
+        /// <summary>
+        /// Traduz boolean para sim ou nao, ao invés de true ou false.
+        /// </summary>
+        /// <param name="condicao">texto capturado pelo console</param>
+        /// <returns>resposta em portugues</returns>
+        public bool TraduzConsole(string condicao){
+            if(condicao == "sim"){
+                bolsista = true;
+            }else {
+                bolsista = false;
+            }
+            return bolsista;
+        }
         public float percentual;
         public float mediaFinal;
         public float valorMensalidade;
